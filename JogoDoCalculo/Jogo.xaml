@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="JogoDoCalculo.Jogo"
+             Title="Jogar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text=""
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" x:Name="valor1"/>
+            <Label Text=""
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" x:Name="op"/>
+            <Label Text=""
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"  x:Name="valor2"/>
+            <Entry x:Name="resultado" VerticalOptions="CenterAndExpand"  Keyboard="Numeric"/>
+            <Button Text="Responder" VerticalOptions="CenterAndExpand"  Clicked="analisarResposta"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
